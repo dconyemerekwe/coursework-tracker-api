@@ -30,6 +30,7 @@ Developed as a proactive technical deep-dive prior to a FinTech Software Enginee
 Clone the repository and run the following command in the root directory:
 ```bash
 docker-compose up --build
+```
 
 The API will be accessible at http://localhost:8080.
 
@@ -39,7 +40,7 @@ Method: `GET`
 Endpoint: `1/api/v1/coursework1`
 Returns a list of all coursework entries.
 
-Method: `GET	
+Method: `GET`	
 Endpoint: `/api/v1/coursework/{id}`	
 Returns a specific entry by its unique ID.
 
