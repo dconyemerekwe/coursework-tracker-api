@@ -5,7 +5,7 @@ A robust RESTful backend service engineered to manage academic deadlines and pro
 ## Project Overview
 Developed as a proactive technical deep-dive prior to a FinTech Software Engineering internship, this project serves as a comprehensive implementation of modern backend standards. It moves beyond academic theory to demonstrate proficiency in:
 *   **System Modeling:** Designing a domain-driven API structure.
-*   **Infrastructure as Code:** Utilizing Docker for consistent environment orchestration.
+*   **Infrastructure as Code:** Utilising Docker for consistent environment orchestration.
 *   **Enterprise Workflow:** Implementing strict Git-flow methodologies, including feature branching and pull request (PR) reviews to ensure code integrity.
 
 ## Tech Stack
@@ -19,7 +19,7 @@ Developed as a proactive technical deep-dive prior to a FinTech Software Enginee
 ## Key Features
 *   **Full CRUD Functionality:** Create, Read, Update, and Delete coursework entries via REST endpoints.
 *   **Relational Persistence:** Integration with PostgreSQL for reliable data management and schema consistency.
-*   **Automated Configuration:** Centralized environment management via `application.properties` and Maven.
+*   **Automated Configuration:** Centralised environment management via `application.properties` and Maven.
 *   **Environment Agnostic:** Fully containerized setup ensuring the application runs identically across development, testing, and production environments.
 
 ## Getting Started / Installation
@@ -56,7 +56,7 @@ Method: `DELETE`
 Endpoint: `/api/v1/coursework/{id}`	
 Permanently removes an entry from the database.
 
-Example POST Body
+Example POST Body:
 ```
 {
   "subject": "Data Structures",
