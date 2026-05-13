@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  # container for the application
+  app:
+    # build an image for the project (Dockerfile)
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - c-network
+
+  # container for the database
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: coursework_db
+    ports:
+      - "5433:5432"
+    networks:
+      - c-network
+    # storing data on custom volume & path to where data is stored
+    volumes:
+      - postgres-c-data:/var/lib/postgresql
+
+networks:
+  c-network:
+    driver: bridge
+
+# store data in volume (on the system) for persistent data every container restart
+volumes:
+  postgres-c-data:
