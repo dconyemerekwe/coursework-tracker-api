@@ -57,9 +57,10 @@ Endpoint: `/api/v1/coursework/{id}`
 Permanently removes an entry from the database.
 
 Example POST Body
-`{
+```{
   "subject": "Data Structures",
   "taskName": "Binary Tree Implementation",
   "dueDate": "2026-06-01",
   "status": "In Progress"
-}`
+}
+```
