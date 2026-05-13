@@ -1,5 +1,4 @@
-\# Coursework Tracker API - local vrs
-
+# Project Name: Coursework Tracker API
 
 
 * Tech Stack: Java, Spring Boot, PostgreSQL, Docker.
