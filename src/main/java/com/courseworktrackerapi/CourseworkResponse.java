@@ -8,4 +8,4 @@ import java.time.LocalDate;
 
 // immutable type of class with automatic getters, equals() & toString()
 public record CourseworkResponse(
-        Long id, Status status, LocalDate dueDate, String moduleCode, String title) {}
+    Long id, Status status, LocalDate dueDate, String moduleCode, String title) {}

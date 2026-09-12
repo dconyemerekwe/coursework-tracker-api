@@ -2,7 +2,6 @@ package com.courseworktrackerapi;
 
 import jakarta.validation.constraints.FutureOrPresent;
 import jakarta.validation.constraints.NotBlank;
-
 import java.time.LocalDate;
 
 // DTO layer (input)
@@ -12,7 +11,7 @@ import java.time.LocalDate;
 // immutable type of class with automatic getters, equals() & toString()
 // defines request rules to fail any bad requests to the controller early
 public record CourseworkRequest(
-        Status status,
-        @FutureOrPresent LocalDate dueDate,
-        @NotBlank String moduleCode,
-        @NotBlank String title) {}
+    Status status,
+    @FutureOrPresent LocalDate dueDate,
+    @NotBlank String moduleCode,
+    @NotBlank String title) {}

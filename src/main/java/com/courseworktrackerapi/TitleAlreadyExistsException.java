@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(HttpStatus.CONFLICT)
 public class TitleAlreadyExistsException extends RuntimeException {
-    public TitleAlreadyExistsException(String message) {
-        super(message);
-    }
+  public TitleAlreadyExistsException(String message) {
+    super(message);
+  }
 }
